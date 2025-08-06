@@ -1,0 +1,12 @@
+{
+  "brew": [
+    "bun",
+    "neovim",
+    "nvm",
+    "tmux",
+    "zsh-syntax-highlighting"
+  ],
+  "cask": [
+    "temurin@17"
+  ]
+}
