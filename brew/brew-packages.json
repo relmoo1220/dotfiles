@@ -4,10 +4,7 @@
     "neovim",
     "nvm",
     "tmux",
-    "zsh-syntax-highlighting",
-    "prettier",
-    "stylua",
-    "black"
+    "zsh-syntax-highlighting"
   ],
   "cask": [
     "temurin@17"
