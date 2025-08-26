@@ -4,7 +4,8 @@
     "neovim",
     "nvm",
     "tmux",
-    "zsh-syntax-highlighting"
+    "zsh-syntax-highlighting",
+    "ripgrep"
   ],
   "cask": [
     "temurin@17"
