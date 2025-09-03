@@ -5,3 +5,4 @@ vim.keymap.set("i", "jj", "<Esc>", { noremap = true, silent = true })
 vim.opt.clipboard = "unnamedplus"
 
 vim.keymap.set("n", "ya", "ggvG$y", { desc = "Yank entire buffer (yank all)" })
+vim.keymap.set("n", "U", "<C-r>", { noremap = true, silent = true, desc = "Redo" })
