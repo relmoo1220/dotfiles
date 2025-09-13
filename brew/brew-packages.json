@@ -1,4 +1,5 @@
 {
+  "tap": ["nikitabobko/tap"],
   "brew": [
     "bun",
     "neovim",
@@ -7,7 +8,6 @@
     "zsh-syntax-highlighting",
     "ripgrep"
   ],
-  "cask": [
-    "temurin@17"
-  ]
+  "cask": ["temurin@17"],
+  "tap_cask": ["nikitabobko/tap/aerospace"]
 }
