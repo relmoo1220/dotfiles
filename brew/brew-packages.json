@@ -6,7 +6,8 @@
     "nvm",
     "tmux",
     "zsh-syntax-highlighting",
-    "ripgrep"
+    "ripgrep",
+    "starship"
   ],
   "cask": ["temurin@17"],
   "tap_cask": ["nikitabobko/tap/aerospace"]

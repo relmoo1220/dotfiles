@@ -2,7 +2,7 @@
 
 My personal dotfiles
 
-## zshrc
+## zshrc alias
 
 ```
 alias cdd='cd ~/Desktop'
