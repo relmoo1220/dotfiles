@@ -15,6 +15,15 @@ wezterm.on("update-status", function(window, _pane)
 end)
 
 return {
+	-- Set background color
+	colors = {
+		background = "#1c1621",
+		foreground = "#c0c0c0",
+	},
+
+	-- Optional: make the window background slightly transparent
+	window_background_opacity = 1,
+
 	leader = { key = "a", mods = "CTRL", timeout_milliseconds = 1000 },
 	window_close_confirmation = "NeverPrompt",
 
