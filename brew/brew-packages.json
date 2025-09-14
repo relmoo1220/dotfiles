@@ -9,6 +9,6 @@
     "ripgrep",
     "starship"
   ],
-  "cask": ["temurin@17"],
+  "cask": ["temurin@17", "wezterm"],
   "tap_cask": ["nikitabobko/tap/aerospace"]
 }
