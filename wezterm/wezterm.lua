@@ -15,9 +15,13 @@ wezterm.on("update-status", function(window, _pane)
 end)
 
 return {
+	-- Set font
+	font = wezterm.font("FiraMono Nerd Font Mono"),
+	-- Set font size
+	font_size = 13.0,
 	-- Set background color
 	colors = {
-		background = "#1c1621",
+		background = "#1c1c1c",
 		foreground = "#c0c0c0",
 	},
 
