@@ -8,6 +8,8 @@ return {
             layout = {
               auto_hide = { "input" },
             },
+            hidden = true,
+            ignored = false,
           },
         },
       },
