@@ -2,9 +2,13 @@
   "tap": ["nikitabobko/tap"],
   "brew": [
     "bun",
+    "uv",
     "neovim",
     "nvm",
+    "powerlevel10k",
     "zsh-syntax-highlighting",
+    "zsh-autosuggestions",
+    "zsh-history-substring-search",
     "ripgrep",
     "fzf",
     "fd"
