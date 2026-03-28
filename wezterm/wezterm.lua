@@ -26,12 +26,24 @@ return {
 	},
 
 	-- Optional: make the window background slightly transparent
-	window_background_opacity = 1,
+	window_background_opacity = 1.0,
 
 	leader = { key = "a", mods = "CTRL", timeout_milliseconds = 1000 },
 	window_close_confirmation = "NeverPrompt",
 
 	keys = {
+		{ key = "n", mods = "LEADER", action = act.ActivateTabRelative(1) }, -- next tab
+		{ key = "p", mods = "LEADER", action = act.ActivateTabRelative(-1) }, -- previous tab
+		{ key = "1", mods = "LEADER", action = act.ActivateTab(0) },
+		{ key = "2", mods = "LEADER", action = act.ActivateTab(1) },
+		{ key = "3", mods = "LEADER", action = act.ActivateTab(2) },
+		{ key = "4", mods = "LEADER", action = act.ActivateTab(3) },
+		{ key = "5", mods = "LEADER", action = act.ActivateTab(4) },
+		{ key = "6", mods = "LEADER", action = act.ActivateTab(5) },
+		{ key = "7", mods = "LEADER", action = act.ActivateTab(6) },
+		{ key = "8", mods = "LEADER", action = act.ActivateTab(7) },
+		{ key = "9", mods = "LEADER", action = act.ActivateTab(8) },
+
 		{ key = "s", mods = "LEADER", action = act.SplitVertical({ domain = "CurrentPaneDomain" }) },
 		{ key = "d", mods = "LEADER", action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
 
