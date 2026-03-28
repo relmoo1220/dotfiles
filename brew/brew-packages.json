@@ -11,8 +11,9 @@
     "zsh-history-substring-search",
     "ripgrep",
     "fzf",
-    "fd"
+    "fd",
+    "bat"
   ],
-  "cask": ["wezterm"],
+  "cask": ["wezterm", "dotnet-sdk"],
   "tap_cask": ["nikitabobko/tap/aerospace"]
 }
