@@ -28,7 +28,7 @@ return {
 	-- Optional: make the window background slightly transparent
 	window_background_opacity = 1.0,
 
-	leader = { key = "a", mods = "CTRL", timeout_milliseconds = 1000 },
+	leader = { key = ".", mods = "CMD", timeout_milliseconds = 1000 },
 	window_close_confirmation = "NeverPrompt",
 
 	keys = {
