@@ -4,4 +4,5 @@ return {
   { "folke/tokyonight.nvim", enabled = false },
   { "folke/which-key.nvim", enabled = false },
   { "folke/todo-comments.nvim", enabled = false },
+  { "akinsho/bufferline.nvim", enabled = false },
 }
