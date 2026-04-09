@@ -30,6 +30,7 @@ return {
 
 	leader = { key = ".", mods = "CMD", timeout_milliseconds = 1000 },
 	window_close_confirmation = "NeverPrompt",
+	alternate_buffer_wheel_scroll_speed = 0,
 
 	keys = {
 		{ key = "n", mods = "LEADER", action = act.ActivateTabRelative(1) }, -- next tab
