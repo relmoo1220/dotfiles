@@ -4,4 +4,3 @@
 
 vim.opt.clipboard = "unnamedplus"
 vim.opt.mouse = ""
-vim.opt.startofline = false

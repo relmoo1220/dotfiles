@@ -4,12 +4,16 @@ return {
     opts = {
       picker = {
         sources = {
+          files = {
+            hidden = true,
+            ignored = false,
+          },
           explorer = {
+            hidden = true,
+            ignored = false,
             layout = {
               auto_hide = { "input" },
             },
-            hidden = true,
-            ignored = false,
           },
         },
       },
