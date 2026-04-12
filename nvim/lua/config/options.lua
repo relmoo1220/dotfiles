@@ -4,6 +4,3 @@
 
 vim.opt.clipboard = "unnamedplus"
 vim.opt.mouse = ""
-vim.diagnostic.config({
-  virtual_text = false,
-})
