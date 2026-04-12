@@ -20,6 +20,7 @@ alias la='ls -lhaG'
 alias cls='clear'
 alias n='nvim'
 alias cat='bat'
+alias catnp='bat --paging=never'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
