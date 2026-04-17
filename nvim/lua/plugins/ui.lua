@@ -53,6 +53,13 @@ return {
             layout = {
               auto_hide = { "input" },
             },
+            win = {
+              list = {
+                keys = {
+                  ["/"] = false, -- Disables the toggle_focus action
+                },
+              },
+            },
           },
         },
       },

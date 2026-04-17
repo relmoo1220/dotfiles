@@ -12,8 +12,9 @@
     "ripgrep",
     "fzf",
     "fd",
-    "bat"
+    "bat",
+    "dotnet"
   ],
-  "cask": ["wezterm", "dotnet-sdk"],
+  "cask": ["wezterm"],
   "tap_cask": ["nikitabobko/tap/aerospace"]
 }

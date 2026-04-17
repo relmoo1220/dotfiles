@@ -2,17 +2,20 @@ return {
   {
     "saghen/blink.cmp",
     opts = function(_, opts)
-      opts.ghost_text = {
-        enabled = false,
-      }
+      opts.completion = opts.completion or {}
 
-      opts.completion = { autocomplete = false }
+      -- disable ghost text (correct way in your version)
+      opts.completion.menu = opts.completion.menu or {}
+      opts.completion.menu.enabled = true
+      opts.completion.menu.auto_show = false
 
       opts.keymap = {
-        ["<Tab>"] = { "select_and_accept", "fallback" }, -- Tab accepts completion if menu open
-        ["<CR>"] = { "fallback" }, -- Enter always inserts newline
-        ["<Esc>"] = { "cancel", "fallback" }, -- Esc closes menu if open, else normal
+        ["<Tab>"] = { "select_and_accept", "fallback" },
+        ["<CR>"] = { "fallback" },
+        ["<Esc>"] = { "cancel", "fallback" },
       }
+
+      return opts
     end,
   },
 }
