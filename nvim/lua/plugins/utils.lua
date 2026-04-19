@@ -1,21 +1,33 @@
 return {
-  {
-    "saghen/blink.cmp",
-    opts = function(_, opts)
-      opts.completion = opts.completion or {}
+  "saghen/blink.cmp",
+  opts = {
 
-      -- disable ghost text (correct way in your version)
-      opts.completion.menu = opts.completion.menu or {}
-      opts.completion.menu.enabled = true
-      opts.completion.menu.auto_show = false
+    -- Completion Behavior
+    completion = {
+      -- Disable Ghost Text (inline preview)
+      ghost_text = {
+        enabled = false,
+      },
 
-      opts.keymap = {
-        ["<Tab>"] = { "select_and_accept", "fallback" },
-        ["<CR>"] = { "fallback" },
-        ["<Esc>"] = { "cancel", "fallback" },
-      }
+      -- Ensure the menu shows up as you type (default is true, but explicit is safe)
+      menu = {
+        auto_show = true,
+      },
 
-      return opts
-    end,
+      -- Prevents automatic insertion of text before you select it
+      list = {
+        selection = {
+          preselect = false, -- Don't auto-highlight the first item
+          auto_insert = false, -- Don't insert text into buffer until accepted
+        },
+      },
+    },
+
+    -- Keymaps
+    keymap = {
+      ["<Tab>"] = { "select_and_accept", "fallback" },
+      ["<CR>"] = { "fallback" },
+      ["<Esc>"] = { "cancel", "fallback" },
+    },
   },
 }
