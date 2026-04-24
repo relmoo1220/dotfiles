@@ -9,6 +9,11 @@ return {
       show_hidden = true,
       natural_order = true,
     },
+    use_default_keymaps = false,
+  },
+  keys = {
+    { "-", "<cmd>Oil<cr>", desc = "Open Oil" },
+    { "_", "<cmd>Oil ..<cr>", desc = "Open parent directory" },
   },
   -- Optional dependencies
   dependencies = { { "nvim-mini/mini.icons", opts = {} } },
