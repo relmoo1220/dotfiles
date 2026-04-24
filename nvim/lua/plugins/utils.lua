@@ -17,7 +17,7 @@ return {
       -- Prevents automatic insertion of text before you select it
       list = {
         selection = {
-          preselect = false, -- Don't auto-highlight the first item
+          preselect = true, -- Don't auto-highlight the first item
           auto_insert = false, -- Don't insert text into buffer until accepted
         },
       },
