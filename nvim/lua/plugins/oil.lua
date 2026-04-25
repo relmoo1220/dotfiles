@@ -5,15 +5,22 @@ return {
   opts = {
     default_file_explorer = true,
     delete_to_trash = true,
+    watch_for_changes = true,
     view_options = {
       show_hidden = true,
       natural_order = true,
     },
     use_default_keymaps = false,
+    keymaps = {
+      ["<CR>"] = "actions.select", -- Enter to open file/folder
+      ["-"] = { "actions.parent", mode = "n" }, -- Go up one dir
+      ["_"] = { "actions.open_cwd", mode = "n" }, -- Jump to CWD
+      ["q"] = { "actions.close", mode = "n" }, -- Close Oil
+    },
   },
   keys = {
-    { "-", "<cmd>Oil<cr>", desc = "Open Oil" },
-    { "_", "<cmd>Oil ..<cr>", desc = "Open parent directory" },
+    { "<leader>e", "<cmd>Oil<cr>", desc = "Open Oil (Current Dir)" },
+    { "<leader>E", "<cmd>Oil ..<cr>", desc = "Open Oil (Parent Dir)" },
   },
   -- Optional dependencies
   dependencies = { { "nvim-mini/mini.icons", opts = {} } },
