@@ -9,8 +9,8 @@ end, { desc = "Yank entire buffer to system clipboard" })
 
 vim.keymap.set("n", "r", "<C-r>", { noremap = true, silent = true, desc = "Redo" })
 vim.keymap.set("n", "R", "<Nop>", { noremap = true, silent = true, desc = "Unmap Replace" })
-vim.keymap.set("n", "U", "<C-u>", { noremap = true, silent = true, desc = "Half Page Up" })
-vim.keymap.set("n", "D", "<C-d>", { noremap = true, silent = true, desc = "Half Page Down" })
+vim.keymap.set({ "n", "v" }, "U", "<C-u>", { noremap = true, silent = true, desc = "Half Page Up" })
+vim.keymap.set({ "n", "v" }, "D", "<C-d>", { noremap = true, silent = true, desc = "Half Page Down" })
 
 -- Cycle to next window with leader + Tab
 vim.keymap.set("n", "<leader><Tab>", "<C-w>w", { desc = "Next window" })
