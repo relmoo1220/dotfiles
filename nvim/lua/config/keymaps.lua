@@ -22,3 +22,9 @@ vim.keymap.set("n", "<S-Right>", ":bnext<CR>", { desc = "Next buffer" })
 vim.keymap.set("n", "<leader>w", "<cmd>w<CR>")
 vim.keymap.set("n", "<leader>W", "<cmd>wa<CR>")
 vim.keymap.set("n", "<leader>q", "<cmd>bd<CR>", { desc = "Close buffer" })
+
+-- Navigating definition
+vim.keymap.set("n", "<leader>d", vim.lsp.buf.definition, { desc = "Goto Definition" })
+vim.keymap.set("n", "<leader>b", "<C-t>", { desc = "Go Back" })
+vim.keymap.set("n", "<C-]>", "<nop>", { desc = "Disabled jump" })
+vim.keymap.set("n", "<C-t>", "<nop>", { desc = "Disabled back" })

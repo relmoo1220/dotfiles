@@ -5,6 +5,8 @@ return {
     priority = 1000,
     opts = {
       transparent = false,
+      dim_inactive = true,
+      lualine_bold = true,
     },
   },
   {

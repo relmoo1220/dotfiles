@@ -4,4 +4,5 @@
 
 vim.opt.clipboard = "unnamedplus"
 vim.opt.mouse = ""
+vim.opt.winbar = "%f %m"
 vim.opt.list = false
