@@ -13,7 +13,9 @@
     "fzf",
     "fd",
     "bat",
-    "dotnet"
+    "dotnet",
+    "rust",
+    "rust-analyzer"
   ],
   "cask": ["wezterm"],
   "tap_cask": ["nikitabobko/tap/aerospace"]
