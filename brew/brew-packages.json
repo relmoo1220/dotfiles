@@ -15,7 +15,8 @@
     "bat",
     "dotnet",
     "rust",
-    "rust-analyzer"
+    "rust-analyzer",
+    "copilot-cli"
   ],
   "cask": ["wezterm"],
   "tap_cask": ["nikitabobko/tap/aerospace"]
