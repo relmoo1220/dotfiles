@@ -21,12 +21,12 @@ return {
 	font_size = 13.0,
 	-- Set background color
 	colors = {
-		background = "#1c1c1c",
+		background = "#141414",
 		foreground = "#c0c0c0",
 	},
 
 	-- Optional: make the window background slightly transparent
-	window_background_opacity = 1.0,
+	window_background_opacity = 1,
 
 	leader = { key = ".", mods = "CMD", timeout_milliseconds = 1000 },
 	window_close_confirmation = "NeverPrompt",
@@ -54,6 +54,52 @@ return {
 		{ key = "l", mods = "LEADER", action = act.ActivatePaneDirection("Right") },
 
 		{ key = "x", mods = "LEADER", action = act.CloseCurrentPane({ confirm = false }) },
+
+		-- join a pane from another tab into this one, 50/50 on the right
+		{
+			key = "m",
+			mods = "LEADER",
+			action = wezterm.action_callback(function(window, pane)
+				local choices = {}
+				local current = window:active_tab():tab_id()
+				for _, tab in ipairs(window:mux_window():tabs()) do
+					if tab:tab_id() ~= current then
+						for _, p in ipairs(tab:panes()) do
+							table.insert(choices, {
+								id = tostring(p:pane_id()),
+								label = tab:get_title() .. " [" .. p:pane_id() .. "] " .. p:get_title(),
+							})
+						end
+					end
+				end
+				window:perform_action(
+					act.InputSelector({
+						title = "Join pane into this tab",
+						choices = choices,
+						action = wezterm.action_callback(function(_, target, id)
+							if id then
+								wezterm.run_child_process({
+									wezterm.executable_dir .. "/wezterm",
+									"cli", "split-pane", "--right",
+									"--pane-id", tostring(target:pane_id()),
+									"--move-pane-id", id,
+								})
+							end
+						end),
+					}),
+					pane
+				)
+			end),
+		},
+
+		-- detach the current pane into its own tab (inverse of join)
+		{
+			key = "b",
+			mods = "LEADER",
+			action = wezterm.action_callback(function(_, pane)
+				pane:move_to_new_tab():activate()
+			end),
+		},
 
 		{
 			key = "r",

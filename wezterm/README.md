@@ -23,6 +23,8 @@ one second.
 | Leader, `d` | Split the current pane horizontally |
 | Leader, `h` / `j` / `k` / `l` | Move focus left / down / up / right |
 | Leader, `x` | Close the current pane without confirmation |
+| Leader, `m` | Pick a pane from another tab and join it into this tab, split to the right |
+| Leader, `b` | Detach the current pane into its own new tab |
 | Leader, `r` | Enter pane-resize mode |
 
 While in pane-resize mode:
