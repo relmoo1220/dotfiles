@@ -4,7 +4,7 @@ return {
     opts = {
       dashboard = { enabled = false },
       explorer = { enabled = false },
-      picker = {
+      indent = { scope = { only_current = true } },      picker = {
         sources = {
           files = {
             hidden = true,
