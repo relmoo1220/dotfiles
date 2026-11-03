@@ -1,7 +1,7 @@
 {
-  "tap": ["nikitabobko/tap"],
+  "tap": ["nikitabobko/tap", "oven-sh/bun"],
   "brew": [
-    "bun",
+    "oven-sh/bun/bun",
     "uv",
     "neovim",
     "nvm",
@@ -16,8 +16,11 @@
     "dotnet",
     "rust",
     "rust-analyzer",
-    "copilot-cli"
+    "cmake",
+    "gh",
+    "just",
+    "playwright-cli"
   ],
-  "cask": ["wezterm"],
+  "cask": ["wezterm", "discord", "pgadmin4", "transmission"],
   "tap_cask": ["nikitabobko/tap/aerospace"]
 }
